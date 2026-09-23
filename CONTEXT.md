@@ -56,6 +56,15 @@ Campo en Envio que registra en cuántos ciclos consecutivos ese Consorcio estuvo
 ### Operario
 El único usuario del sistema en el MVP. Dueño de la empresa de mantenimiento de ascensores. Gestiona el maestro, sube los Excels de deudores y supervisa el seguimiento de respuestas.
 
+### Piloto acompañado
+Período inicial de uso de la herramienta por este cliente durante dos cortes de deuda, con acompañamiento de Juan y Julián. Su propósito es validar el recorrido real de importación, recordatorios y seguimiento antes de ampliar funcionalidades.
+
+### Corte de deuda
+Situación de la cartera informada por una importación completa de deudores del sistema de facturación. Actualiza el historial y permite consultar su evolución independientemente de que se envíen recordatorios.
+
+### Pausa de recordatorios
+Suspensión temporal de los correos de cobranza de un Consorcio, decidida por el Operario. También llamada «on hold». El Consorcio conserva su condición de cliente, saldo e historial; la pausa no equivale a una baja ni a una regularización de deuda.
+
 ---
 
 ## Estados de un Envio

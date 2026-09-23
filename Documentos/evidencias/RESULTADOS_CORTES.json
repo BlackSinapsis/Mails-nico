@@ -1,0 +1,90 @@
+[
+  {
+    "caso": "R01 archivo repetido",
+    "resultado_observado": {
+      "ciclos": 2,
+      "rachas": [
+        1,
+        2
+      ],
+      "recordatorios_reales": 0
+    }
+  },
+  {
+    "caso": "R02 archivo solo encabezados",
+    "resultado_observado": {
+      "ciclos": 2,
+      "deuda_actual": "0",
+      "saldado_anterior": true
+    }
+  },
+  {
+    "caso": "R03 monto textual argentino",
+    "resultado_observado": {
+      "deuda_actual": "0",
+      "saldado_anterior": true
+    }
+  },
+  {
+    "caso": "R04 correo PAGO altera continuidad del Excel",
+    "resultado_observado": {
+      "desde_antes": "2026-01-01 00:00:00",
+      "desde_despues_pago_antiguo": "2026-01-16 00:00:00",
+      "deuda_actual_con_pago_actual": "100000.00",
+      "deudores_actuales": 1,
+      "lista_antiguedad": 0,
+      "desde_con_pago_actual": null
+    }
+  },
+  {
+    "caso": "R05 reducciones parciales e historico",
+    "resultado_observado": {
+      "reducciones_api_por_corte": [
+        "None",
+        "40000.00",
+        "60000.00"
+      ],
+      "saldado_historico_formula_perfil": "60000.00",
+      "saldo_actual_en_ficha": "—"
+    }
+  },
+  {
+    "caso": "R06 reaparicion tras ausencia valida",
+    "resultado_observado": {
+      "racha_actual": 1,
+      "serie_saldos": [
+        "100000.00",
+        "0",
+        "120000.00"
+      ]
+    }
+  },
+  {
+    "caso": "R07 duplicados",
+    "resultado_observado": {
+      "monto_conservado": "25000",
+      "filas_descartadas": 1
+    }
+  },
+  {
+    "caso": "R08 archivo viejo sin fecha de corte",
+    "resultado_observado": {
+      "saldo_antes": "70000",
+      "saldo_despues": "100000.00",
+      "preview_repiten": 1,
+      "preview_nuevos": 0,
+      "cortes": 3
+    }
+  },
+  {
+    "caso": "R09 limite matematico de dos fotos",
+    "resultado_observado": {
+      "saldo_anterior": 100000,
+      "saldo_actual": 80000,
+      "reduccion_observable": 20000,
+      "historia_posible_1": "pago 20000, cargos 0",
+      "historia_posible_2": "pago 70000, cargos 50000",
+      "conclusion": "las dos historias producen el mismo Excel; el cobro real no es identificable con saldos solos"
+    }
+  }
+]
